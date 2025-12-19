@@ -50,7 +50,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.sizh.rideon.rider.taxiapp"
+        applicationId = "com.muzaitechsols.ride"
         minSdkVersion 23
         targetSdkVersion 36
         versionCode flutterVersionCode.toInteger()

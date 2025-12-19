@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
     flutterVersionName = "1.0"
 }
 
-// ✅ Load keystoreProperties
+// Load keystoreProperties (if using signing)
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
@@ -50,19 +50,24 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.sizh.rideon.rider.taxiapp"
+        // ✅ Must match Firebase package name
+        applicationId = "com.muzaitechsols.ride"
         minSdkVersion 23
         targetSdkVersion 36
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
 
-
-
     buildTypes {
         release {
+            // Use debug signing if no release keystore configured
             signingConfig signingConfigs.debug
-           
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
         }
     }
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "189351822868",
+    "project_id": "rideon-b2644",
+    "storage_bucket": "rideon-b2644.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189351822868:android:fdfa4dc013082049fd8901",
+        "android_client_info": {
+          "package_name": "com.muzaitechsols.ride"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVDRalZ95YbvZgMXB2hH0qKhyON5QMbLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

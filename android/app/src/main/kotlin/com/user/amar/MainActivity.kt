@@ -1,5 +1,6 @@
-package com.sizh.rideon.rider.taxiapp
+package com.muzaitechsols.ride
 
 import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity : FlutterActivity()
+class MainActivity: FlutterActivity() {
+}
